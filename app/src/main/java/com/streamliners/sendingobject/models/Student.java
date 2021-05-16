@@ -13,9 +13,9 @@ public class Student implements Serializable {
 
     public Student(String name, String gender, String rollNumber, String mobileNumber) {
         this.name = name;
-        this.mobileNumber = mobileNumber;
-        this.rollNumber = rollNumber;
         this.gender = gender;
+        this.rollNumber = rollNumber;
+        this.mobileNumber = mobileNumber;
     }
 
 
@@ -24,16 +24,8 @@ public class Student implements Serializable {
             return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getGender() {
             return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
     }
 
     public CharSequence getRollNumber() {
@@ -44,7 +36,4 @@ public class Student implements Serializable {
             return mobileNumber;
     }
 
-    public void setMobileNumber(String mobileNumber) {
-        this.mobileNumber = mobileNumber;
-    }
 }

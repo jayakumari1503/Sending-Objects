@@ -172,7 +172,7 @@ public class ObjectSenderActivity extends AppCompatActivity {
             return null;
         }
 
-        Student student = new Student(name, mobileNumber, rollNumber, gender);
+        Student student = new Student(name, gender, rollNumber, mobileNumber);
         return student;
     }
 
